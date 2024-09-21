@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+div#grid,
+div.grid-sq-row {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #cb997e;
+  color: white;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Permanent Marker", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+div.grid-sq-row {
+  flex-direction: row;
+}
+
+div.grid-sq {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid white;
+}

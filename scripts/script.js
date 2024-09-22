@@ -17,6 +17,13 @@ for (let i = 1; i <= gridScale; i++) {
 
 grid.addEventListener("mouseover", (e) => {
   if (e.target.id == "gridSq") {
-    e.target.style.background = "black";
+    e.target.style.background = getRandomColor();
   }
 });
+
+function getRandomColor() {
+  whiteCol = 0xffffff;
+  randomHex = Math.floor(Math.random() * whiteCol).toString(16);
+  randomColor = `#${randomHex}`;
+  return randomColor;
+}

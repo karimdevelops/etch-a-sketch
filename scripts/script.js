@@ -5,7 +5,7 @@ drawGrid(gridScale);
 
 updateButton.addEventListener("click", () => {
   gridScale = prompt("Enter a grid scale (Max: 30)");
-  while (gridScale > 30) {
+  while (gridScale > 30 || gridScale == 0 || gridScale == null) {
     gridScale = prompt("Error!\nEnter a grid scale again (Max: 30)");
   }
   removeGrid();
